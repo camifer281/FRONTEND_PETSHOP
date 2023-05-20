@@ -1,0 +1,404 @@
+*{
+    margin: 0;  /*se crea afuera */
+    padding: 0;  /*se crea dentro */
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: miFuente;
+    src: url(../FONTS/Roboto-Light.ttf)
+}
+@font-face {
+    font-family: miFuente2;
+    src: url(../FONTS/Roboto-Bold.ttf);
+}
+body{
+    font-family: miFuente;
+}
+header  ul a{
+    text-decoration: none;
+    color: white;
+}
+
+header .encabezado1 {
+    display: flex;
+    justify-content: space-between;  
+    background-color: black;
+    padding: 5px 20px 5px 20px; 
+}
+
+header .encabezado1 ul{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+header .encabezado1 a{
+    color: white;
+    text-decoration: none;
+}
+
+header .encabezado1 i{
+    font-size: 10px;
+}
+
+header .navegacion{
+    display: flex;
+    background-color: #F0A83E;
+    padding: 24px 20px 24px 40px;
+    justify-content:space-between;
+    
+}
+
+.navegacion .barra i{
+display: none;
+}
+
+.menu1{
+    display: flex;
+    justify-content: flex-end;
+    gap:32px;
+    }
+
+.menu1 .li a:hover{
+    background-color: #eec68a;
+    color:#222222
+}
+
+.menu1 li i{
+    font-size: 20px;
+}
+
+main .contenedor_uno{
+    background-image: url(../IMG/LOGO_BOWL.png);
+    height: 409px; 
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end; /*se ubican los items al final del main axis*/
+    align-items: center; /*vertical*/
+    padding: 10px;
+    margin-bottom: 25px; 
+}
+
+main .division_uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+main .division_uno h1{
+    background-color: white;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #3C2313;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400px; 
+    letter-spacing: 1px; 
+}
+main .division_uno h2{
+    color: #3C2313;
+    font-size: 16px;
+}
+
+main .division_uno a{
+    color:white;
+    font-weight: 400px; 
+    text-decoration: none;
+    background-color: #F0A83E;
+    padding: 17px;
+    border-radius: 5px;
+    text-transform: uppercase; 
+}
+
+main .division_uno a:hover{
+    background-color:#eec68a;
+    color:black;
+}
+main .contenedor_dos {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+main .contenedor_dos h2{
+    color: #3C2313;
+    font-weight: 400px;
+    font-size: 40px;
+}
+main .contenedor_dos ul li a{
+    color: #666666;
+    text-decoration: none;
+    font-size:15px;
+    font-weight: 400px;
+    
+    
+}
+main .contenedor_dos .lista{
+    padding-top: 15px;
+}
+main .contenedor_dos .lista li{
+    padding-left: 30px;
+    display:inline;
+}
+
+main .contenedor_dos .division_dos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_right, .div_center, .div_left{/* las comas sirven para seleccionar todos lo elementos*/
+    /*del documento y aplicar las mismas reglas CSS a todos ellos*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBFAF6;
+    margin: 50px 20px 80px 20px;
+    padding-bottom: 10px;
+}
+.p1, .p2, .p3{
+    color: #3C2313;
+    font-family: miFuente2;
+    font-size: 15px;
+    
+}
+.precio{
+    color: #F0A83E;
+    font-family: miFuente2;
+    font-size: 15px;
+}
+
+main .contenedor_dos .titulo1{
+    color: #3C2313;
+    font-size: 25px;
+    font-weight: 700px;
+    font-family: miFuente2;
+    margin-bottom: 15px;
+}
+
+.division_tres { 
+    display: flex; /* inicia flex-box */
+    flex-direction: column;  /* organiza los items en columnas */
+    margin-bottom: 40px;
+}
+
+.division_tres input{
+    display: flex;
+    background-color: #3C2313;
+    margin: 7px;
+    padding: 15px 210px 15px 10px; 
+    border-radius: 15px;
+    border: 0;
+    color:#FBFAF6;
+}
+
+::placeholder { color: #FBFAF6;
+opacity: 0.4; }
+
+.botones{
+    margin-bottom: 70px;
+}
+
+.botones .btn1 {
+    background-color: #8A8787;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: #FBFAF6;
+    font-size: 16px;
+    border: 0;
+}
+
+.botones button:hover {
+    background-color: #eedd99; /*color de relleno cuando me coloco sobre el boton*/
+    color: #3C2313; /*color del texto cuando me coloco sobre el boton*/
+}
+.botones .btn2 {
+    background-color: #F0A83E;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    color: #FBFAF6;
+    font-size: 16px;
+    border: 0;
+}
+
+main .division4{
+    display: flex;
+    background-color: #F0A83E;
+    padding: 7px 40px 7px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .division4 .botones2{
+    display: flex;
+    justify-content:flex-end;
+}
+
+main .division4 .suscribete{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    color: white;
+    font-size: 40px;
+}
+
+.division4 h3 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.division4 .botones2 input {
+    font-size: 13px;
+    background-color: white;
+    border-radius: 15px;
+    height: 50px;
+    width: 350px;
+    padding-left: 10px;
+    align-items: flex-start;
+    border: 0;
+}
+
+::placeholder{
+    color: #9c8d8d;
+}
+
+.division4 .botones2 button{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    background-color: #3C2313;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 12px;
+    border: 0;
+}
+
+.division4 .botones2 button:hover{
+background-color: #eec68a;
+color: #3C2313;
+}
+
+footer .fin{ /*hacer flex box entre los textos y la imagen de cat and dog*/
+    display: flex;
+    align-items: center;
+    background-color: #3C2313;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 150px;
+    justify-content: space-between; 
+}
+
+footer .fin .final {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.localidad, .telefono, .mail{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items:center;
+}
+
+.t2{
+    margin-left: 20px;
+}
+
+footer .final .titulo2{
+    color: white;
+    font-size: 20px;
+    font-weight: 700px; 
+}
+
+footer .final p{
+    color: white; 
+    font-size: 10px;
+    font-weight: 700px;
+}
+
+footer .derechos{
+background-color: #222222;
+padding: 5px;
+text-align: center;
+color:#FBFAF6;
+font-family: miFuente2;
+}
+
+@media (max-width:576px) /*Quiere decir que de 576px para abajo se va aplicar el diseño responsive*/
+{
+    header .encabezado1{
+        display: none;
+    }
+
+    .menu1 {
+        display: none;
+        }
+
+        .navegacion .barra i, a{
+            display: block;
+            text-decoration:none;
+        }
+
+        .navegacion .barra i:hover{
+            color: #3C2313;
+        }
+
+        main .contenedor_dos h2{
+            font-size: 45px;
+            text-align: center;
+        }
+        main .contenedor_dos .lista{
+            display: flex;
+        }
+
+    
+    main .contenedor_dos .division_dos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .div_right, .div_center, .div_left{
+            margin: 22px;  
+        }
+
+        main .division4{
+            display: flex;
+            flex-direction: column;
+            padding: 7px 20px 7px 10px;
+        }
+        
+        .division4 .botones2 input {
+            width: 280px;
+            margin-top:10px;
+            padding-left: 10px;
+        }
+        
+        footer .fin{
+            display: flex;
+            flex-direction: column;
+        }
+}
+
+
+
+
+
+
+
+
+
